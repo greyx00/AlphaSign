@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Translator">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <org.opencv.android.JavaCameraView
+            android:id="@+id/camera"
+            android:layout_width="match_parent"
+            android:layout_height="400dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="200dp"
+            android:background="#FF0000" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="200dp"
+            android:background="#FF0000"
+            android:rotation="-90" />
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/tvRes"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:gravity="top|left"
+        android:textSize="24sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+            <Button
+                android:id="@+id/bttCattura"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Cattura" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <Button
+                android:id="@+id/bttReset"
+                android:layout_width="126dp"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:id="@+id/bttSalva"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Copia" />
+
+
+            <Button
+                android:id="@+id/bttCanc"
+                android:layout_width="126dp"
+                android:layout_height="wrap_content"
+                android:text="Canc"
+                android:layout_marginLeft="5dp"/>
+
+        </TableRow>
+
+        <Button
+            android:id="@+id/bttTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TEST colori"/>
+
+    </TableLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvGuanti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:drawablePadding="40dp"
+        android:text="Per utilizzare ques'app è necessario utilizzare guanti colorati, in alto contrasto con i colori di sfondo."
+        android:textSize="20sp"
+        app:drawableLeftCompat="@drawable/guanti"
+        android:paddingRight="15dp"/>
+
+
+
+    <TextView
+        android:id="@+id/tvDestra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:drawablePadding="40dp"
+        android:text="La traduzione funziona solo con la mano destra"
+        android:textSize="20sp"
+        app:drawableLeftCompat="@drawable/destra"
+        android:paddingRight="15dp"/>
+
+    <TextView
+        android:id="@+id/tvCentro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:drawablePadding="40dp"
+        android:text="Usa la croce sullo schermo per puntare al centro della mano"
+        android:textSize="20sp"
+        app:drawableLeftCompat="@drawable/centro"
+        android:paddingRight="15dp"/>
+
+    <TextView
+        android:id="@+id/tvScelta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="10dp"
+        android:text="Scegli il colore dei guanti utilizzati :"
+        android:textSize="20sp" />
+
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_marginTop="30dp"
+
+        android:checkedButton="@+id/radiog"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
+
+        <RadioButton
+            android:id="@+id/radiog"
+            android:textAlignment="center"
+
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/text_color"
+            android:elevation="4dp"
+
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="20dp"
+            android:text="giallo" />
+
+        <RadioButton
+
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/text_color"
+            android:elevation="4dp"
+
+            android:id="@+id/radiob"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:textAlignment="center"
+            android:text="blu" />
+
+
+        <RadioButton
+
+
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/text_color"
+            android:elevation="4dp"
+
+
+            android:id="@+id/radiov"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="verde" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvIntro"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|left"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/bttContinua"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Continua" />
+
+</LinearLayout>
